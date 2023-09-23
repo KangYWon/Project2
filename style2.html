@@ -1,9 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        /*style 2 */
+        body {
+            font: 100% Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+
+        .small {
+            position: relative;
+            overflow: auto;
+        }
+
+        #right {
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            padding-left: 10px;
+        }
+
+        #bottom {
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        }
+        
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+
+        #menulist {
+            padding: 0;
+            position: relative;
+        }
+
+        .menuitem {
+            width: 165px;
+            float: left;
+            background-color: #555555;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .menuitem:nth-child(3){
+            background-color: #04AA6D;
+        }
+
+        .menuitem:hover {
+            background-color: #ffffff;
+        }
+
+        a {
+            color: #ffffff;
+        }
+
+        a:hover {
+            color: #84c754;
+        }
+    
+    </style>
 </head>
 <body>
     <div id ="background">
@@ -12,14 +69,14 @@
             <p1>Use the menu to select different Stylesheets</p1>         
         </div>
 
-        <div class ="small background">
+        <div class ="small">
             <div id="left">
-                <ul>
-                    <li>Stylesheet 1</li>
-                    <li>Stylesheet 2</li>
-                    <li>Stylesheet 3</li>
-                    <li>Stylesheet 4</li>
-                    <li>No Stylesheet</li>
+                <ul id="menulist">
+                    <li class="menuitem" onclick="reStyle(0)">Stylesheet 1</li>
+                    <li class="menuitem" onclick="reStyle(1)">Stylesheet 2</li>
+                    <li class="menuitem" onclick="reStyle(2)">Stylesheet 3</li>
+                    <li class="menuitem" onclick="reStyle(3)">Stylesheet 4</li>
+                    <li class="menuitem" onclick="reStyle()">No Stylesheet</li>
                 </ul>
             </div>
 
@@ -34,7 +91,7 @@
                 <p2>
                     This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
                     <br>
-                    <a href="#" >No Stylesheet</a>.
+                    <a href="#">No Stylesheet</a>.
                 </p2>
             </div>
 
