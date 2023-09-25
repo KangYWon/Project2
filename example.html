@@ -18,6 +18,7 @@
 
         .masthead-nav > li:last-child {
             margin-right: 0;
+            text-decoration: none;
         }
 
         .cover-heading {
@@ -34,9 +35,10 @@
         .btn-default {
             background-color: #fff;
             border-color: #333;
-            color: #fff;
-            border-radius: 5px; /* 약간 둥글게 만들기 */
+            color: #000;
+            border-radius: 5px; /*모서리*/
             padding: 10px 20px;
+            text-decoration: none;
         }
 
         .btn-default:hover,
@@ -55,16 +57,6 @@
         }
         a:hover {
             color: #fff;
-        }
-
-        .masthead-brand{
-            text-align: left;
-        }
-        .nav masthead-nav{
-            text-align: right;
-        }
-        .bottom {
-            padding-bottom:50%;
         }
 
         @media (max-width: 767px) {
@@ -101,14 +93,14 @@
             <h3 class="masthead-brand" style="color:white;">Cover</h3>
             <nav>
                 <ul class="nav masthead-nav">
-                <li class="active" style="color:white;"><a href="#">Home</a></li>
-                <li><a href="#" style="color:white;">Features</a></li>
-                <li><a href="#" style="color:white;">Contact</a></li>
-              </ul>
+                    <li class="pull-left" style="color:white;"><a href="#">Home</a></li>
+                    <li class="pull-left" style="color:white;"><a href="#">Features</a></li>
+                    <li class="pull-left" style="color:white;"><a href="#">Contact</a></li>
+                </ul>
             </nav>
         </div>
 
-        <div class="inner cover">
+        <div class="inner cover text-center">
             <h1 class="cover-heading" style="color:white;" >Cover your page.</h1>
             <p class="lead" style="color:white;">Cover is a one-page template for building simple and beautiful home pages. 
                 Download, edit the text, and add your own fullscreen background photo to make it your own.
@@ -118,11 +110,9 @@
             </p>
         </div>
 
-        <div class="bottom">
+        <div class="mastfoot">
             <p style="color:white;">
-                Cover template for 
-                <a>Bootstrap,</a> 
-                <a>by @mdo.</a>
+            Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.
             </p>
         </div>
 
