@@ -6,9 +6,15 @@
             background-color: #333;
         }
         /*top*/
+        .masthead {
+            background-color: transparent;
+            text-align: center;
+        }
+
         .masthead-brand {
             margin-top: 10px;
             margin-bottom: 10px;
+            color: white;
         }
 
         .masthead-nav > li {
@@ -23,13 +29,12 @@
 
         .cover-heading {
             font-weight: bold;
-            color: #333;
         }
 
-        .lead {
-            font-size: 21px;
-            line-height: 1.4;
-            color: #555;
+        .cover-heading,
+        .lead,
+        .btn-default {
+            color: white
         }
 
         .btn-default {
@@ -55,6 +60,10 @@
             font-family: "Helvetica Nenu", Helvetica, Arial, sans-serif;
             font-size: 14px;
         }
+        a {
+            color: white;
+        }
+
         a:hover {
             color: #fff;
         }
@@ -89,20 +98,20 @@
 
     <div class="background">
 
-        <div class="inner">
-            <h3 class="masthead-brand" style="color:white;">Cover</h3>
+        <div class="inner masthead">
+            <h3 class="masthead-brand">Cover</h3>
             <nav>
                 <ul class="nav masthead-nav">
-                    <li class="pull-left" style="color:white;"><a href="#">Home</a></li>
-                    <li class="pull-left" style="color:white;"><a href="#">Features</a></li>
-                    <li class="pull-left" style="color:white;"><a href="#">Contact</a></li>
+                    <li class="pull-left"><a href="#">Home</a></li>
+                    <li class="pull-left"><a href="#">Features</a></li>
+                    <li class="pull-left"><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </div>
 
         <div class="inner cover text-center">
-            <h1 class="cover-heading" style="color:white;" >Cover your page.</h1>
-            <p class="lead" style="color:white;">Cover is a one-page template for building simple and beautiful home pages. 
+            <h1 class="cover-heading">Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. 
                 Download, edit the text, and add your own fullscreen background photo to make it your own.
             </p>
             <p class="lead">
@@ -111,8 +120,8 @@
         </div>
 
         <div class="mastfoot">
-            <p style="color:white;">
-            Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.
+            <p>
+            Cover template for <a href="#">Bootstrap</a>, by <a href="#">@mdo</a>.
             </p>
         </div>
 
