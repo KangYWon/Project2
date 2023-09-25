@@ -9,12 +9,14 @@
         .masthead {
             background-color: transparent;
             text-align: center;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
         }
 
         .masthead-brand {
-            margin-top: 10px;
-            margin-bottom: 10px;
             color: white;
+            font-size: 24px;
         }
 
         .masthead-nav > li {
@@ -29,6 +31,7 @@
 
         .cover-heading {
             font-weight: bold;
+            font-size: 36px;
         }
 
         .cover-heading,
@@ -59,6 +62,7 @@
             text-shadow: 0 1px 3px rgba(0,0,0,.5);
             font-family: "Helvetica Nenu", Helvetica, Arial, sans-serif;
             font-size: 14px;
+            text-decoration: none;
         }
         a {
             color: white;
@@ -71,32 +75,8 @@
         .mastfoot {
             text-align: text-bottom;
             color: white;
-            margin-top: 20px;
         }
 
-        @media (max-width: 767px) {
-            .masthead-brand {
-                margin-top: 20px;
-            }
-
-            .masthead-nav {
-                display: block;
-                margin-bottom: 20px;
-            }
-
-            .masthead-nav > li {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-
-            .cover-heading {
-                font-size: 24px;
-            }
-
-            .lead {
-                font-size: 18px;
-            }
-        }
 
     </style>
 </head>
@@ -125,7 +105,7 @@
             </p>
         </div>
 
-        <div class="mastfoot">
+        <div class="mastfoot" style="position: fixed; bottom: 0; text-align: center; color: white;">
             <p>
             Cover template for <a href="#">Bootstrap</a>, by <a href="#">@mdo</a>.
             </p>
